@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Accordion from './components/Accordion';
 import Search from './components/Search';
+import Dropdown from './components/Dropdown';
+import Translate from './components/Translate';
 
 const items = [
 	{
@@ -17,10 +19,25 @@ const items = [
 	},
 ];
 
+const options = [
+	{
+		label: 'A shade of Blue',
+		value: 'blue',
+	},
+	{
+		label: 'A shade of Orange',
+		value: 'orange',
+	},
+	{
+		label: 'A shade of Red',
+		value: 'red',
+	},
+];
+
 const App = () => {
 	return (
 		<div>
-			<Search />
+			<Translate />
 		</div>
 	);
 };
